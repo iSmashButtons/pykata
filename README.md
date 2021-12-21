@@ -3,7 +3,7 @@
 Python Katas
 ------------
 
-This list is taken from the __Mega Project List__ compiled by Karan Goel on GitHub. Continue reading for more details on this and credits. Since I will be using this list as a set of challeneges to practice what I know about programming with Python, I am calling it __Python Katas__. The table of contents, other links, and some other aspects of this markdown file have been modified so that it plays nicely with me in VSCode; allowing me to jump around to sections, keep track of what's in-progges or completed, and jump into files by clicking links.
+This list is taken from the __Mega Project List__ compiled by Karan Goel on GitHub. Continue reading for more details on this and credits. Since I will be using this list as a set of challeneges to practice what I know about programming with Python, I am calling it __Python Katas__. The table of contents, other links, and some other aspects of this markdown file have been modified so that it plays nicely with me in VSCode; allowing me to jump around to sections, keep track of what's in-progges or completed, and jump into files by clicking links. Hiyah!
 
 
 ## Mega Project List
