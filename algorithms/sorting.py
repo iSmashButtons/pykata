@@ -22,11 +22,11 @@ def bubble_sort(unsorted: list):
         else:
             switch_occurred = False
 
-def merge_sort(unsorted_list: list):
+def merge_sort(unsorted: list):
     '''
     Sort input list from highest-to-lowest using merge sort algorithm.
     '''
-    assert type(unsorted_list) == list, f'parameter {unsorted_list} must be a list.'
+    assert type(unsorted) == list, f'parameter {unsorted} must be a list.'
 
     def merge(a, b):
         merged_list = []
@@ -40,11 +40,11 @@ def merge_sort(unsorted_list: list):
         merged_list.extend(b)
         return merged_list
 
-    if len(unsorted_list) <= 1:
-        return unsorted_list
+    if len(unsorted) <= 1:
+        return unsorted
 
-    midpoint = len(unsorted_list) // 2
-    left, right = unsorted_list[:midpoint], unsorted_list[midpoint:]
+    midpoint = len(unsorted) // 2
+    left, right = unsorted[:midpoint], unsorted[midpoint:]
     left = merge_sort(left)
     right = merge_sort(right)
     sorted_list = merge(left, right)
