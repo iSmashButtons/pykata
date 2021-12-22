@@ -5,6 +5,9 @@ def fibonacci(n: int):
     '''
     Returns the Fibonacci sequence out to `n` numbers. 
     '''
+    if n > 50:
+        n = 50
+
     fib = [0, 1]
     if n <= 1:
         print(fib[0])
@@ -17,9 +20,8 @@ def fibonacci(n: int):
         fib.append(next)
         print(fib[-1], end=' ')
 
-
 while True:
-    print("\nHow many Fibonacci numbers would you like to see?")
+    print("\nHow many Fibonacci numbers would you like to see (max 50)?")
     try:
         qty = input("(q to quit)>>> ")
         if 'q' in qty:
