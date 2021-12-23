@@ -5,6 +5,7 @@ Python Katas
 
 This list is taken from the __Mega Project List__ compiled by Karan Goel on GitHub. Continue reading for more details on this and credits. Since I will be using this list as a set of challeneges to practice what I know about programming with Python, I am calling it __Python Katas__. The table of contents, other links, and some other aspects of this markdown file have been modified so that it plays nicely with me in VSCode; allowing me to jump around to sections, keep track of what's in-progges or completed, and jump into files by clicking links. Hiyah!
 
+Titles for projects that are in-progress or completed will be linked to the associated file. A :heavy_check_mark: next to the link indicates the project is complete, a :construction_worker: indicates it is a work-in-progress.
 
 ## Mega Project List
 
@@ -55,27 +56,27 @@ Problems are motivated by the ones shared at:
 Numbers
 ---------
 
-[**Find PI to the Nth Digit**](./numbers/pi^n.py) - Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
+[**Find PI to the Nth Digit**](./numbers/pi^n.py) :heavy_check_mark: Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
 
-[**Find e to the Nth Digit**](./numbers/e^n.py) - Just like the previous problem, but with e instead of PI. Enter a number and have the program generate e up to that many decimal places. Keep a limit to how far the program will go.
+[**Find e to the Nth Digit**](./numbers/e^n.py) :heavy_check_mark: Just like the previous problem, but with e instead of PI. Enter a number and have the program generate e up to that many decimal places. Keep a limit to how far the program will go.
 
-[**Fibonacci Sequence**](./numbers/fibonacci.py) - Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
+[**Fibonacci Sequence**](./numbers/fibonacci.py) :heavy_check_mark: Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
 
 **Prime Factorization** - Have the user enter a number and find all Prime Factors (if there are any) and display them.
 
 **Next Prime Number** - Have the program find prime numbers until the user chooses to stop asking for the next one.
 
-[**Find Cost of Tile to Cover W x H Floor**](./numbers/tilecost.py) - Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
+[**Find Cost of Tile to Cover W x H Floor**](./numbers/tilecost.py) :heavy_check_mark: Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
 
 **Mortgage Calculator** - Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan. For added complexity, add an option for users to select the compounding interval (Monthly, Weekly, Daily, Continually).
 
-[**Change Return Program**](./numbers/changereturn.py) - The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.
+[**Change Return Program**](./numbers/changereturn.py) :heavy_check_mark: The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.
 
 **Binary to Decimal and Back Converter** - Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent.
 
 **Calculator** - A simple calculator to do basic operators. Make it a scientific calculator for added complexity.
 
-**Unit Converter (temp, currency, volume, mass and more)** - Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
+[**Unit Converter (temp, currency, volume, mass and more)**](./numbers/unit_converter.py) :construction_worker: Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
 
 **Alarm Clock** - A simple clock where it plays a sound after X number of minutes/seconds or at a particular time.
 
