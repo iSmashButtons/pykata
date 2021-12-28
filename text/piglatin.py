@@ -27,6 +27,8 @@ def piglatin(engStr: str):
         print('input must be a string object.')
         return None
 
+    engStr = engStr.lower()
+
     # convert string to a list of words
     engWords = engStr.split(' ')
 
@@ -35,19 +37,24 @@ def piglatin(engStr: str):
         if len(word) == 1 or word.isnumeric():
             continue
 
+        # check for punctuation in word and store it in a variable for later
+        for p in word:
+            if p in '!@#$%^&*()-+.,<>~':
+                punct = p
+                word = word.rstrip(p)
+
         # remove the first letter
-        punct = word.rstrip(".?,!'")
         first_letter = word[0]
-        platin_word = word.removeprefix(first_letter)
+        word = word[(word.index(first_letter) + 1):]
 
         # add the first letter and 'ay' to the end
-        platin_word = platin_word + first_letter + 'ay'
+        platin_word = word + first_letter + 'ay' + p
 
         # replace the word in the list with the new pig latin word.
         engWords[i] = platin_word
 
-        # conver the list of words back into a string.
-        retStr = ' '.join(engWords)
+    # convert the list of words back into a string.
+    retStr = ' '.join(engWords)
 
     return retStr
 
@@ -58,6 +65,7 @@ while True:
     if english == 'q':
         break
 
-    print('\n' + piglatin(english))
+    pl = piglatin(english)
+    print('\n' + pl)
     input()
     title_bar()
