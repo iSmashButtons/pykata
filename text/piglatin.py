@@ -33,24 +33,17 @@ def piglatin(engStr: str):
     engWords = engStr.split(' ')
 
     for i, word in enumerate(engWords):
-        # skip if word has only 1 letter or is a number
-        if len(word) == 1 or word.isnumeric():
-            continue
-
-        # check for punctuation in word and store it in a variable for later
-        for p in word:
-            if p in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', ',' '.', '<', '>', '~']:
-                punct = p
-                word = word.strip(p)
-            else:
-                p = ''
+        # remove symbols, punctuation and numbers from the string
+        for l in word:
+            if l in r'!@#$%^&*()[]{}-_<>?/\\`~1234567890':
+                word = word.replace(l, '')
 
         # remove the first letter
         first_letter = word[0]
         word = word[(word.index(first_letter) + 1):]
 
         # add the first letter and 'ay' to the end
-        platin_word = word + first_letter + 'ay' + p
+        platin_word = word + first_letter + 'ay'
 
         # replace the word in the list with the new pig latin word.
         engWords[i] = platin_word
