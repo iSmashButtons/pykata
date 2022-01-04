@@ -7,7 +7,7 @@ This list is taken from the __Mega Project List__ compiled by Karan Goel on GitH
 
 Titles for projects that are in-progress or completed will be linked to the associated file. A :heavy_check_mark: next to the link indicates the project is complete, a :construction_worker: indicates it is a work-in-progress.
 
-## Mega Project List
+## Credit to: Mega Project List
 
 A list of practical projects that anyone can solve in any programming language (See [solutions](https://github.com/thekarangoel/Projects-Solutions)). These projects are divided in multiple categories, and each category has its own folder.
 

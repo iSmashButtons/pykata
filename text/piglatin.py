@@ -39,9 +39,11 @@ def piglatin(engStr: str):
 
         # check for punctuation in word and store it in a variable for later
         for p in word:
-            if p in '!@#$%^&*()-+.,<>~':
+            if p in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', ',' '.', '<', '>', '~']:
                 punct = p
-                word = word.rstrip(p)
+                word = word.strip(p)
+            else:
+                p = ''
 
         # remove the first letter
         first_letter = word[0]
