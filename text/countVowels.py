@@ -1,8 +1,19 @@
-# [**Count Vowels**](./text/vowelcount.py) Enter a string
-# and the program counts the number of vowels in the text. For added complexity
-# have it report a sum of each vowel found.
+# Count Vowels: Enter a string and the program counts the number of vowels in
+# the text. For added complexity have it report a sum of each vowel found.
+
+import os
 
 VOWELS = ['a','e','i','o','u']
+
+def clear():
+    '''
+    Clear the terminal.
+    '''
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print('Vowel Counter'.center(50))
+    print("-------------".center(50))
+    print("Enter a string and I will count the number of\nvowels individually and in total. Press 'q' at\nany prompt to quit.")
+    print('*' * 50)
 
 def total_vowels(s):
     """ 
@@ -17,7 +28,6 @@ def total_vowels(s):
 
     return num_vowels
 
-# TODO: finish this function
 def sum_each_vowel(s):
     """Counts the vowels witin a string and returns a dictionary with the sum
     total of each vowl.
@@ -28,16 +38,20 @@ def sum_each_vowel(s):
         for l in word:
             if l in VOWELS:
                 sv[l] += 1
+    
     return sv
 
 while True:
-    print("Enter a string and I will tell you the total number of vowels ('q' to quit').")
-    #instring = input('>>> ')
-    instring = "I fart in your general direction!"
-    print('Total vowels: ', total_vowels(instring))
-    vowel_totals_gen = (i for i in sum_each_vowel(instring).values())
-    for i in vowel_totals_gen:
-        print(type(i), i)
-    #sum_vowels = sum(vowel_totals_gen)
-    print('Sum of each vowel: ', sum_each_vowel(instring))
+    clear()
+    instring = input('\n>>> ')
+
+    clear()
+    print(f'\nCounting the vowels in "{instring}"... ')
+    print('\nTotal vowels: ', total_vowels(instring))
+
+    vowel_totals = sum_each_vowel(instring)
+    print('\nSum of each vowel: ')
+    for item in vowel_totals.items():
+        print(f"{item[0]}: {item[1]}")
+    print()
     break

@@ -35,7 +35,7 @@ def piglatin(engStr: str):
     for i, word in enumerate(engWords):
         # remove symbols, punctuation and numbers from the string
         for l in word:
-            if l in r'!@#$%^&*()[]{}-_<>?/\\`~1234567890':
+            if l in r'!@#$%^&*()[]{}-_<>,."\':;?/\\`~1234567890':
                 word = word.replace(l, '')
 
         # remove the first letter
@@ -55,12 +55,12 @@ def piglatin(engStr: str):
 
 title_bar()
 while True:
-    print("Enter English ('q' to quit):")
+    print("\nEnter English ('q' to quit):")
     english = input('>>> ')
     if english == 'q':
         break
 
     pl = piglatin(english)
-    print('\n' + pl)
+    print(pl)
     input()
     title_bar()
