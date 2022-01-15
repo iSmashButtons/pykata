@@ -62,7 +62,7 @@ def random_list(nel):
         output.append(randint(0,99))
     return output
 
-rlist = random_list(12)
+rlist = random_list(12000000)
 
 print(bubble_sort(rlist))
 print(merge_sort(rlist))
