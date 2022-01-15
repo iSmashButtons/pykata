@@ -37,3 +37,5 @@ while True:
         print(f"\nNope. {user_in} is not a palindrome.")
 
     input('Press enter to continue.\n')
+
+#TODO: check for palindrome with recursive function.
